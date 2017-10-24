@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from "@angular/router";
 
 import { AppComponent } from './app.component';
-
 import { TeamPageModule } from './team-page/team-page.module';
+import { CommonNavigation } from './components/common-navigation/common-navigation.component';
 
 const ROUTES: Routes = [{
   path: "**", redirectTo: "/"
@@ -12,7 +12,8 @@ const ROUTES: Routes = [{
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CommonNavigation
   ],
   imports: [
     BrowserModule,
