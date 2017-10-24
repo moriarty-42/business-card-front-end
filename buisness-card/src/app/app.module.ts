@@ -4,7 +4,7 @@ import { Routes, RouterModule } from "@angular/router";
 
 import { AppComponent } from './app.component';
 
-import { TeamPageModule } from '../team-page/team-page.module';
+import { TeamPageModule } from './team-page/team-page.module';
 
 const ROUTES: Routes = [{
   path: "**", redirectTo: "/"
